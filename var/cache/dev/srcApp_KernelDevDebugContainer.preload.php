@@ -6,7 +6,7 @@
 use Symfony\Component\DependencyInjection\Dumper\Preloader;
 
 require dirname(__DIR__, 3).'\\vendor/autoload.php';
-require __DIR__.'/ContainerASj9K9x/srcApp_KernelDevDebugContainer.php';
+require __DIR__.'/Container9zKfut4/srcApp_KernelDevDebugContainer.php';
 
 $classes = [];
 $classes[] = 'Symfony\Bundle\FrameworkBundle\FrameworkBundle';
@@ -28,6 +28,11 @@ $classes[] = 'Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser';
 $classes[] = 'Symfony\Bundle\FrameworkBundle\EventListener\ResolveControllerNameSubscriber';
 $classes[] = 'Symfony\Component\HttpFoundation\RequestMatcher';
 $classes[] = 'Symfony\Component\DependencyInjection\ServiceLocator';
+$classes[] = 'App\Repository\ArticlesRepository';
+$classes[] = 'App\Repository\CategoriesRepository';
+$classes[] = 'App\Repository\CommentairesRepository';
+$classes[] = 'App\Repository\MotsClesRepository';
+$classes[] = 'App\Repository\UsersRepository';
 $classes[] = 'Symfony\Bundle\FrameworkBundle\Controller\RedirectController';
 $classes[] = 'Symfony\Bundle\FrameworkBundle\Controller\TemplateController';
 $classes[] = 'Symfony\Component\Cache\DoctrineProvider';
@@ -339,7 +344,7 @@ $classes[] = 'Symfony\Component\Security\Http\RememberMe\ResponseListener';
 $classes[] = 'Symfony\Component\Security\Core\Role\RoleHierarchy';
 $classes[] = 'Symfony\Component\Security\Core\Authentication\Token\Storage\UsageTrackingTokenStorage';
 $classes[] = 'Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage';
-$classes[] = 'Symfony\Component\Security\Core\User\InMemoryUserProvider';
+$classes[] = 'Symfony\Bridge\Doctrine\Security\User\EntityUserProvider';
 $classes[] = 'Symfony\Component\Security\Core\Validator\Constraints\UserPasswordValidator';
 $classes[] = 'Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener';
 $classes[] = 'Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener';
